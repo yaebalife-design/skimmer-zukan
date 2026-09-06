@@ -437,10 +437,8 @@ footer.site{border-top:1px solid var(--line); background:var(--card); margin-top
 .cmp-out{margin-top:20px}
 body.has-tray{padding-bottom:80px}
 
-/* ヒーロー：右カラム（装飾SVG）は高さ0で場所だけ取っていたので1カラムに畳む */
+/* ヒーロー：本文の行長を読みやすい幅で止める（装飾SVGの重なりは下の v3 ブロックで制御） */
 @media(min-width:861px){
-  .hero2 .in{grid-template-columns:minmax(0,1fr)}
-  .hero2 .right{display:none}
   .hero2 h1{max-width:19em}
   .hero2 .lead{max-width:46em}
 }
@@ -553,9 +551,11 @@ h2[id],h3[id],#tools,#catalog,#db,#cmp-out,#table-view,#ranking,#figures{scroll-
 /* 2本目M12: 手順ブロックの二重採番を防ぐ（本文側の①〜は外した） */
 
 /* 2本目M18: 図はモバイルで縮みすぎるので拡大スクロールを許す */
+.fighint{display:none}                     /* 広い画面では図は収まるので出さない */
 @media(max-width:560px){
   figure.fig{overflow-x:auto}
   figure.fig svg{min-width:470px}
+  .fighint{display:block; position:sticky; left:0; padding:0 8px}
 }
 
 /* 2本目H9: フォームの不正入力を枠でも示す */
@@ -647,9 +647,18 @@ details.score li b{color:var(--ink)} details.score li b small{color:var(--ink-so
 /* ══ v3（UXレビュー反映） ══ */
 .hero2 .kicker{color:#BFD8E3; font-size:13px; letter-spacing:.12em; margin:0 0 6px; font-weight:700}
 .hero2 .prnote{color:#D6E6EE}
-.hero2 .in{grid-template-columns:1.1fr .9fr}
-.hero2 .right{position:relative}
-.hero2 .right .herosvg{position:absolute; right:-10px; top:-30px; width:200px; opacity:.28; pointer-events:none}
+/* ヒーローの装飾SVG（泡が上がる断面図）は、グリッドの列を取らずに右へ重ねる。
+   2026-09-06 修正：以前は .9fr の列を確保していたため右に471pxの空白ができ、
+   そのうえ列を display:none にしたので「空白だけ残って泡が消える」状態になっていた。
+   本文が全幅を使い、SVGは絶対配置の装飾として上に乗る形にする。 */
+.hero2 .in{grid-template-columns:minmax(0,1fr); position:relative}
+.hero2 .right{position:absolute; right:0; top:50%; transform:translateY(-50%);
+  width:240px; pointer-events:none; z-index:0}
+.hero2 .right .herosvg{position:static; width:100%; max-width:none; margin:0; opacity:.34}
+.hero2 .in > div:first-child{position:relative; z-index:1}   /* 本文を泡より前面に */
+/* 装飾が本文に重なる幅では出さない。1100px未満は本文が右端まで伸びて読みにくくなる */
+@media(max-width:1100px){ .hero2 .right{display:none} }
+@media(min-width:1101px){ .hero2 .in > div:first-child{padding-right:280px} }
 .heroform{position:relative; background:rgba(255,255,255,.96); color:var(--ink); border-radius:16px; padding:20px 22px 18px; box-shadow:0 18px 40px rgba(0,0,0,.35); display:flex; flex-direction:column; gap:10px}
 .heroform h2{font-size:20px; margin:0; padding:0; border:none; color:var(--sea-deep)}
 .heroform h2::before{display:none}
