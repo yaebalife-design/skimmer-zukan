@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skimmer-zukan.com/sitemap.xml

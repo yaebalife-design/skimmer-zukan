@@ -1,0 +1,15 @@
+# このリポジトリは公開物（site/ の中身）だけを置く。
+# 生成元のツール・ナレッジ・社長室は親フォルダにあり、ここには入れない。
+
+# Cloudflare のローカル状態。アカウント名（＝メールアドレス）を含むので絶対に入れない
+.wrangler/
+
+# シークレット類
+.env
+.env.*
+*.key
+*-service-account*.json
+credentials*.json
+
+.DS_Store
+Thumbs.db
