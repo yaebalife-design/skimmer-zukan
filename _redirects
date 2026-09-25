@@ -1,3 +1,33 @@
 # Cloudflare Pages の転送ルール（手書き維持。build.py は上書きしない）
 # 記事を削除・統合したら「旧パス 新パス 301」を1行追加する
 /index.html / 301
+# 2026-09-26 OG画像を PNG → JPEG に変更（SNSに残る旧URLを新しい画像へ）
+/assets/og/120cm-suisou.png /assets/og/120cm-suisou.jpg 301
+/assets/og/60cm-suisou.png /assets/og/60cm-suisou.jpg 301
+/assets/og/90cm-suisou.png /assets/og/90cm-suisou.jpg 301
+/assets/og/airlift.png /assets/og/airlift.jpg 301
+/assets/og/awa-ga-agaranai.png /assets/og/awa-ga-agaranai.jpg 301
+/assets/og/awa-modori.png /assets/og/awa-modori.jpg 301
+/assets/og/default.png /assets/og/default.jpg 301
+/assets/og/filter-chigai.png /assets/og/filter-chigai.jpg 301
+/assets/og/hitsuyousei.png /assets/og/hitsuyousei.jpg 301
+/assets/og/kaido-daruma.png /assets/og/kaido-daruma.jpg 301
+/assets/og/kaido-kappa.png /assets/og/kaido-kappa.jpg 301
+/assets/og/kappa-daruma-qq1.png /assets/og/kappa-daruma-qq1.jpg 301
+/assets/og/kogata-suisou.png /assets/og/kogata-suisou.jpg 301
+/assets/og/mame-skimmer3.png /assets/og/mame-skimmer3.jpg 301
+/assets/og/nano-skimmer-compact.png /assets/og/nano-skimmer-compact.jpg 301
+/assets/og/over-skim.png /assets/og/over-skim.jpg 301
+/assets/og/overflow-suisou.png /assets/og/overflow-suisou.jpg 301
+/assets/og/pump-koukan.png /assets/og/pump-koukan.jpg 301
+/assets/og/qq1-qq3-chigai.png /assets/og/qq1-qq3-chigai.jpg 301
+/assets/og/reef-octopus.png /assets/og/reef-octopus.jpg 301
+/assets/og/sango.png /assets/og/sango.jpg 301
+/assets/og/shikumi.png /assets/og/shikumi.jpg 301
+/assets/og/sotogake.png /assets/og/sotogake.jpg 301
+/assets/og/souji-hindo.png /assets/og/souji-hindo.jpg 301
+/assets/og/suii-chosei.png /assets/og/suii-chosei.jpg 301
+/assets/og/urusai.png /assets/og/urusai.jpg 301
+/assets/og/venturi.png /assets/og/venturi.jpg 301
+/assets/og/wood-stone.png /assets/og/wood-stone.jpg 301
+/assets/og/zensui-qq1.png /assets/og/zensui-qq1.jpg 301
