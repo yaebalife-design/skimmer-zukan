@@ -815,6 +815,20 @@ table.cmp.rank{min-width:480px}
   .mr-price b{font-size:18px}
   .mr-act{margin-top:6px; padding-top:0}
 }
+/* 交換部品の一覧（機種ページ・消耗品と機種の記事） */
+.ptable{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:0 16px; margin:12px 0 6px; box-shadow:var(--sh-1)}
+.pt-row{display:grid; grid-template-columns:minmax(0,1fr) 150px 196px; gap:6px 16px; align-items:center; padding:12px 0}
+.pt-row + .pt-row{border-top:1px dashed var(--line)}
+.pt-name{min-width:0; line-height:1.45}
+.pt-name b{display:block; font-size:15px; font-weight:800}
+.pt-no,.pt-for{display:block; font-size:12px; color:var(--ink-3); margin-top:1px}
+.pt-for a{color:var(--ink-2)}
+.pt-price{margin:0; line-height:1.25}
+.pt-price small{display:block; font-size:11.5px; color:var(--ink-3); font-weight:600}
+.pt-price b{font-size:18px; font-weight:800; font-variant-numeric:tabular-nums; letter-spacing:0}
+.pt-price i{display:block; font-style:normal; font-size:11.5px; color:var(--ink-3)}
+.pt-row .mr-shops{justify-content:flex-end}
+@media(max-width:640px){ .pt-row{grid-template-columns:minmax(0,1fr) auto; gap:6px 12px} .pt-name{grid-column:1 / -1} .pt-row .mr-shops a{min-height:44px} }
 /* タイルを押した直後の「N機種を見る」（スマホ） */
 .jumppill{position:fixed; left:50%; transform:translateX(-50%); bottom:16px; z-index:44; background:var(--brand-ink); color:#fff; border:none; border-radius:999px;
   min-height:48px; padding:0 22px; font:800 15px var(--sans); box-shadow:0 10px 28px rgba(0,0,0,.3); cursor:pointer}
