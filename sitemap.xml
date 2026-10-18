@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://skimmer-zukan.com/</loc><priority>1.0</priority><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://skimmer-zukan.com/</loc><priority>1.0</priority><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/120cm-suisou</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/60cm-suisou</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/90cm-suisou</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/airlift</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/awa-ga-agaranai</loc><priority>0.8</priority><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/awa-modori</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://skimmer-zukan.com/articles/erabikata</loc><priority>0.8</priority><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/filter-chigai</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/hitsuyousei</loc><priority>0.8</priority><lastmod>2026-09-06</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/kaido-daruma</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
@@ -29,8 +30,8 @@
   <url><loc>https://skimmer-zukan.com/articles/venturi</loc><priority>0.8</priority><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/wood-stone</loc><priority>0.8</priority><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://skimmer-zukan.com/articles/zensui-qq1</loc><priority>0.8</priority><lastmod>2026-09-26</lastmod></url>
-  <url><loc>https://skimmer-zukan.com/data</loc><priority>0.7</priority><lastmod>2026-09-26</lastmod></url>
-  <url><loc>https://skimmer-zukan.com/makers</loc><priority>0.7</priority><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://skimmer-zukan.com/data</loc><priority>0.7</priority><lastmod>2026-10-18</lastmod></url>
+  <url><loc>https://skimmer-zukan.com/makers</loc><priority>0.7</priority><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://skimmer-zukan.com/models/</loc><priority>0.7</priority><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://skimmer-zukan.com/models/aquaexcel-ae-100h</loc><priority>0.7</priority><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://skimmer-zukan.com/models/aquaexcel-ae-chs-ec-20</loc><priority>0.7</priority><lastmod>2026-10-17</lastmod></url>

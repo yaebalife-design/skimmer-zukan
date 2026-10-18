@@ -804,6 +804,8 @@ body.has-tray{padding-bottom:90px}
 /* ══ 2026-09-26 レビュー反映 ══ */
 .cmp td .src{display:block; font-size:12px; color:var(--ink-3); margin-top:2px}
 table.cmp.rank{min-width:480px}
+/* 選び方記事の水量表：4列を画面幅に収める（2026-10-18） */
+table.cmp.tankfit{min-width:0} table.cmp.tankfit th,table.cmp.tankfit td{white-space:normal} table.cmp.tankfit tbody th{min-width:0}
 .na-d{display:block; font-size:12px; color:var(--ink-3); margin-top:3px; line-height:1.6}
 .dbwrap{max-height:calc(100svh - var(--hdr) - 80px)}
 #table-view:not([hidden]) + .tnote{display:none}
