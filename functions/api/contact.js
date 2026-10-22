@@ -132,7 +132,7 @@ async function appendToSheet(env, row) {
     if (!token) return false;
     const url = "https://sheets.googleapis.com/v4/spreadsheets/" + encodeURIComponent(id)
       + "/values/" + encodeURIComponent(tab) + "!A1:H1:append"
-      + "?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS";
+      + "?valueInputOption=RAW&insertDataOption=INSERT_ROWS";
     const r = await fetch(url, {
       method: "POST",
       headers: { authorization: "Bearer " + token, "content-type": "application/json" },
