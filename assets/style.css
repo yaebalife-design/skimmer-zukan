@@ -297,6 +297,8 @@ span.rk.top{background:linear-gradient(135deg,#0B6E8A,#063447)}
 .mr-shops a.r{background:var(--rkt); color:#fff}
 .mr-shops a.r:hover{background:#9E0000}
 .mr-shops a.y{background:var(--surface); color:var(--yh); border:1.5px solid var(--yh)}
+.mr-shops a.a{background:var(--amz); color:#fff}
+.mr-shops a.a:hover{background:#6F4818}
 .mr-shops a.s{background:var(--surface); color:var(--brand-ink); border:1.5px solid var(--brand-line)}
 .mr-shops .none{font-size:11.5px; color:var(--ink-3)}
 .mr-act{grid-column:2; grid-row:2; align-self:end; display:flex; align-items:center; gap:2px 16px; flex-wrap:wrap; padding-top:6px; font-size:13px}
@@ -596,7 +598,7 @@ figure.fig figcaption{font-size:13px; color:var(--ink-2); margin-top:10px; line-
   display:inline-flex; flex-direction:column; justify-content:center; align-items:center; text-decoration:none; flex:1 1 200px; text-align:center; line-height:1.3}
 .buybtn.rkt{background:var(--rkt)} .buybtn.rkt:hover{background:#9E0000; color:#fff}
 .buybtn.yh{background:var(--surface); color:var(--yh); border:2px solid var(--yh)} .buybtn.yh:hover{background:#F5F0FC; color:var(--yh)}
-.buybtn.amz{background:var(--amz)}
+.buybtn.amz{background:var(--amz)} .buybtn.amz:hover{background:#6F4818; color:#fff}
 .buybtn.shop{background:var(--surface); color:var(--brand-ink); border:2px solid var(--brand-line)} .buybtn.shop:hover{border-color:var(--brand)}
 .buybtn.ghost{background:var(--surface-2); color:var(--ink-2); border:1px dashed var(--line-2); cursor:default; font-weight:700}
 .buybtn small{font-weight:500; font-size:12px; letter-spacing:.02em; opacity:.9}
@@ -857,11 +859,11 @@ table.cmp.tankfit{min-width:0} table.cmp.tankfit th,table.cmp.tankfit td{white-s
 @media(max-width:980px){ .mgrid{grid-template-columns:minmax(0,1fr)} .m-top,.m-side,.m-rest{grid-column:1; grid-row:auto} }
 /* 機種ページ：スマホの画面下の購入バー（購入枠が画面外のときだけ） */
 .mbar{position:fixed; left:0; right:0; bottom:0; z-index:44; background:rgba(255,255,255,.97); border-top:1px solid var(--line);
-  box-shadow:0 -6px 18px rgba(6,40,56,.12); padding:8px 12px calc(8px + env(safe-area-inset-bottom)); display:flex; align-items:center; gap:10px}
+  box-shadow:0 -6px 18px rgba(6,40,56,.12); padding:8px 12px calc(8px + env(safe-area-inset-bottom)); display:flex; align-items:center; gap:8px}
 .mbar .p{flex:1; min-width:0; line-height:1.25}
 .mbar .p small{display:block; font-size:11px; color:var(--ink-3); font-weight:700}
 .mbar .p b{font-size:18px; font-weight:800; font-variant-numeric:tabular-nums}
-.mbar a{display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:0 14px; border-radius:10px; font-weight:800; font-size:13.5px; text-decoration:none; white-space:nowrap}
-.mbar a.r{background:var(--rkt); color:#fff} .mbar a.y{background:#fff; color:var(--yh); border:1.5px solid var(--yh)} .mbar a.s{background:#fff; color:var(--brand-ink); border:1.5px solid var(--brand-line)}
+.mbar a{display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:0 12px; border-radius:10px; font-weight:800; font-size:13.5px; text-decoration:none; white-space:nowrap}
+.mbar a.r{background:var(--rkt); color:#fff} .mbar a.a{background:var(--amz); color:#fff} .mbar a.y{background:#fff; color:var(--yh); border:1.5px solid var(--yh)} .mbar a.s{background:#fff; color:var(--brand-ink); border:1.5px solid var(--brand-line)}
 @media(min-width:981px){ .mbar{display:none!important} }
 body.has-mbar{padding-bottom:76px}
